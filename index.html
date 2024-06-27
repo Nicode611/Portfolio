@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <ul>
+                        <li><div class="profile-picture"></div></li>
+                        <li class="portfolio-title">Nicolas Guigay</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="contact-back">
+                        <a href="#" class="contact-button">CONTACT</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="profile">
+            <h1 class="main-title">Mon profil</h1>
+            <p class="description-text">Fraichement diplômé, je suis un passionné
+                de technologies, réfléchi, très curieux et à
+                l’écoute.<br>
+                Mon expérience inclut des projets variés,
+                notamment une application complète pour
+                faciliter la communication entre voisins.
+                Polyvalent, j'aime travailler autant sur le
+                front-end que le back-end, prêt à
+                m'adapter et à apprendre dans un
+                environnement dynamique.
+            </p>
+            <div class="timeline">
+                <div class="timeline-titles">
+                    <span>Mon profil</span>
+                    <span>Hello voisins</span>
+                    <span>Garage V. Parrot</span>
+                    <span>Minute Beauté</span>
+                    <span>EM Sellerie</span>
+                </div>
+                <input class="timeline-input" type="range" min="0" max="4" step="1" value="0" id="timeline-slider">
+            </div>
+        </section>
+        <section class="projects">
+            <a href="#"><div class="project voisins"></div></a>
+            <a href="#"><div class="project garage"></div></a>
+            <a href="#"><div class="project beauté"></div></a>
+            <a href="#"><div class="project sellerie"></div></a>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-/* for (let i = 0; i < 50; i++) {
+ for (let i = 0; i < 50; i++) {
     const bubble = document.createElement('div');
     bubble.classList.add('bubble');
     bubble.style.left = `${Math.random() * 100}%`;
@@ -14,4 +14,4 @@ const slider = document.getElementById('timeline-slider');
 slider.addEventListener('input', (e) => {
     console.log(`Selected year: ${e.target.value}`);
 });
- */
+ 

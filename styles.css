@@ -60,32 +60,16 @@ a {
     padding-left: 10px;
 }
 
+
+
+/* contact */
+
 .contact-section {
+    position: relative;
     display: flex;
     align-items: center;
     width: auto;
-}
-
-.contact-btn {
     margin-right: 50px;
-    position: relative;
-}
-
-/* A ajuster */
-/* .contact-container {
-    height: 20px;
-    width: 100px;
-    background-color: #000000;
-    border-radius: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-.contact-container span {
-    color: white;
-    font-size: 1.5em;
-    text-shadow: 0px 0px 20px black;
 }
 
 .contact-background {
@@ -95,13 +79,41 @@ a {
     box-shadow: inset 0px 0px 15px black;
     position: absolute;
     transform: rotate(45deg);
-    left: -90px;
-    top: -220px;
-    z-index: -1;
+    left: -70px;
+    top: -200px;
+    z-index: 0;
+}
+
+.contact-btn {
+    position: relative;
+    top: -15px;
+    right: -10px;
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #000000;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+.contact-btn:hover {
+    background-color: #e9e9e9; 
+    color: black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
 }
 
 
 
+/* main */
 
 main {
     display: flex;
@@ -130,7 +142,7 @@ main {
 }
 
 .projects h2 {
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 .projects-list {
@@ -157,16 +169,19 @@ main {
 }
 
 .project {
+    position: relative;
+    top: -70px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 65%;
     padding-right: 150px;
+    z-index: 0;
 }
 
 .project-img {
-    max-width: 600px;
-    max-height: 500px;
+    max-width: 446px;
+    height: auto;
     background-image: url(images/helov.webp);
     background-size: cover;
     background-position: center;
@@ -183,10 +198,30 @@ main {
     backdrop-filter: blur(3px);
 }
 
+.see-project-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #124E68; 
+    border: none;
+    border-radius: 50px; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+.see-project-btn:hover {
+    background-color: #124E68; 
+    box-shadow: inset 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
 
 
 /* Bottom left triangles */
-
 
 .triangle {
     position: fixed;
@@ -197,7 +232,7 @@ main {
 .triangle1 {
     height: 300px;
     width: 300px;
-    background-color: #124E68   ; /* couleur du triangle */
+    background-color: #124E68   ; 
     box-shadow: 0px 0px 10px black;
     transform: rotate(45deg);
     z-index: 3;
@@ -206,9 +241,9 @@ main {
  .triangle2 {
     height: 300px;
     width: 300px;
-    background-color: #124E68   ; /* couleur du triangle */
+    background-color: #124E68   ; 
     box-shadow: 0px 0px 10px black;
-    left: 0px; /* décalage pour le positionnement */
+    left: 0px; 
     bottom: -200px;
     transform: rotate(45deg);
     z-index: 2;
@@ -217,9 +252,9 @@ main {
 .triangle3 {
     height: 300px;
     width: 300px;
-    background-color: #124E68   ; /* couleur du triangle */
+    background-color: #124E68   ; 
     box-shadow: 0px 0px 10px black;
-    left: 150px; /* décalage pour le positionnement */
+    left: 150px; 
     bottom: -250px;
     transform: rotate(45deg);
     z-index: 1;
@@ -246,7 +281,7 @@ main {
     background: #124e68;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.55);
     border-radius: 5%;
-    animation: bubble 20s linear infinite;
+    animation: bubble 10s ease-in infinite;
     z-index: -1;
 }
 
@@ -255,6 +290,6 @@ main {
         transform: translateY(0) scale(1);
     }
     100% {
-        transform: translateY(-100vh) scale(0);
+        transform: translateY(-120vh) scale(0);
     }
 }

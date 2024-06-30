@@ -66,30 +66,30 @@ a {
 /* contact */
 
 .contact-section {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     width: auto;
-    margin-right: 50px;
+    z-index: 1;
 }
 
 .contact-background {
+    position: fixed;
     background-color: #124E68;
     height: 300px;
     width: 300px;
     box-shadow: 0px 0px 15px black;
     border-radius: 5px;
-    position: absolute;
     transform: rotate(45deg);
-    left: -70px;
+    right: -30px;
     top: -200px;
-    z-index: 0;
+    z-index: 1;
 }
 
 .contact-btn {
-    position: relative;
-    top: -15px;
-    right: -10px;
+    position: fixed;
+    top: 20px;
+    right: 45px;
     display: inline-block;
     padding: 15px 30px;
     font-size: 18px;
@@ -187,7 +187,7 @@ main {
     background-image: url(images/helov.webp);
     background-size: cover;
     background-position: center;
-    z-index: 1;
+    z-index: 0;
 }
 
 .project-name {

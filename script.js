@@ -4,27 +4,33 @@ let garage = document.querySelector('#garage-list');
 let mb = document.querySelector('#mb-list');
 let sellerie = document.querySelector('#sellerie-list');
 
-
+document.addEventListener("DOMContentLoaded", function() {
+    voisins.click();
+});
 
 voisins.addEventListener('click', () => changeProject(voisins));
 garage.addEventListener('click', () => changeProject(garage));
 mb.addEventListener('click', () => changeProject(mb));
 sellerie.addEventListener('click', () => changeProject(sellerie));
 
+
 function changeProject(clicked) {
     let projectImg = document.querySelector('.project-img');
     let projectName = document.querySelector('.project-name');
     let projectDescription = document.querySelector('.project-description');
+    let projectBtn = document.querySelector('.see-project-btn');
 
     // Ajout d'une classe active pour les transitions d'opacité
     projectName.classList.remove('active');
     projectDescription.classList.remove('active');
+    projectBtn.classList.remove('active');
 
     setTimeout(() => {
         if (clicked === voisins) {
             projectImg.style.backgroundImage = 'url(images/voisins.webp)';
             projectName.innerHTML = 'HELLO VOISINS';
             projectDescription.innerHTML = 'Hello-Voisins est une application web conçue pour faciliter la communication entre voisins.<br> L\'application permet aux utilisateurs de discuter avec leurs voisins en utilisant la localisation des utilisateurs.<br>Elle permet aussi la création de groupes de discussion pour des immeubles,résidences, ou pour tout autre cas d’usages, et inclus également la possibilité de voir tous les utilisateurs à proximité sur une carte, tout en respectant la confidentialité des utilisateurs qui peuvent choisir de ne pas apparaître.';
+            projectBtn.href = "https://hello-voisins.com"
         } else if (clicked === garage) {
             projectImg.style.backgroundImage = 'url(images/gar.webp)';
             projectName.innerHTML = 'GARAGE V. PARROT';
@@ -43,6 +49,7 @@ function changeProject(clicked) {
         setTimeout(() => {
             projectName.classList.add('active');
             projectDescription.classList.add('active');
+            projectBtn.classList.add('active');
         }, 100);
     }, 500); // Délai pour permettre la transition d'opacité
 }

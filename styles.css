@@ -133,10 +133,24 @@ main {
 .profile-description p {
     padding-left: 20px;
     margin: 0px;
+    margin-bottom: 20px;
     font-weight: bold;
     font-size: 1.2em;
     min-width: 470px;
     backdrop-filter: blur(3px);
+}
+
+.mail-section, .phone-section {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.description-ico {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
 }
 
 
@@ -281,11 +295,52 @@ main {
 
 
 @media screen and (max-width: 1098px) {
-    
+    body {
+        overflow: auto;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .infos-section {
+        padding: 0px;
+    }
+
+    .projects {
+        display: none;
+    }
+
+    .project {
+        position: initial;
+        padding: 10px;
+    }
+
 }
 
 @media screen and (max-height: 860px) {
-    
+    .projects {
+        margin-top: 20px;
+    }
+
+    .project-img {
+        max-width: auto;
+        max-height: 30vw;
+        background-image: url(images/helov.webp);
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
+
+    .projects-list li {
+        padding: 5px 5px;
+        font-size: 1.1em;
+    }
 }
 
 
@@ -322,11 +377,11 @@ main {
     transition: background-image 0.5s ease-in-out;
 }
 
-.project-name, .project-description {
+.project-name, .project-description, .see-project-btn {
     transition: opacity 0.5s ease-in-out;
     opacity: 0;
 }
 
-.project-name.active, .project-description.active {
+.project-name.active, .project-description.active, .see-project-btn.active {
     opacity: 1;
 } 

@@ -196,7 +196,7 @@ main {
 .project-img {
     max-width: 446px;
     height: auto;
-    background-image: url(images/helov.webp);
+    background-image: url(images/voisins.webp);
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -285,14 +285,7 @@ main {
 }
 
 @media screen and (max-height: 860px) {
-    .project-img {
-        max-width: auto;
-        max-height: 30vw;
-        background-image: url(images/helov.webp);
-        background-size: cover;
-        background-position: center;
-        z-index: 1;
-    }
+    
 }
 
 
@@ -322,3 +315,18 @@ main {
         transform: translateY(-120vh) scale(0);
     }
 }
+
+
+
+/* .project-img {
+    transition: background-image 0.5s ease-in-out;
+}
+
+.project-name, .project-description {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.project-name.active, .project-description.active {
+    opacity: 1;
+} */

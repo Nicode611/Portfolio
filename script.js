@@ -16,26 +16,36 @@ function changeProject(clicked) {
     let projectName = document.querySelector('.project-name');
     let projectDescription = document.querySelector('.project-description');
 
-    if (clicked === voisins) {
-        projectImg.style.backgroundImage = 'url(images/voisins.webp)';
-        projectName.innerHTML = 'HELLO VOISINS';
-        projectDescription.innerHTML = 'Les voisins la';
-    } else if (clicked === garage) {
-        projectImg.style.backgroundImage = 'url(images/gar.webp)';
-        projectName.innerHTML = 'GARAGE V. PARROT';
-        projectDescription.innerHTML = 'le garage la';
-    } else if (clicked === mb) {
-        projectImg.style.backgroundImage = 'url(images/mb.webp)';
-        projectName.innerHTML = 'MINUTE BEAUTE';
-        projectDescription.innerHTML = 'Ma soeur la';
-    } else if (clicked === sellerie) {
-        projectImg.style.backgroundImage = 'url(images/coming.webp)';
-        projectName.innerHTML = 'EM SELLERIE';
-        projectDescription.innerHTML = 'Les clients la';
-    }
+    // Ajout d'une classe active pour les transitions d'opacité
+    projectName.classList.remove('active');
+    projectDescription.classList.remove('active');
+
+    setTimeout(() => {
+        if (clicked === voisins) {
+            projectImg.style.backgroundImage = 'url(images/voisins.webp)';
+            projectName.innerHTML = 'HELLO VOISINS';
+            projectDescription.innerHTML = 'Les voisins la';
+        } else if (clicked === garage) {
+            projectImg.style.backgroundImage = 'url(images/gar.webp)';
+            projectName.innerHTML = 'GARAGE V. PARROT';
+            projectDescription.innerHTML = 'le garage la';
+        } else if (clicked === mb) {
+            projectImg.style.backgroundImage = 'url(images/mb.webp)';
+            projectName.innerHTML = 'MINUTE BEAUTE';
+            projectDescription.innerHTML = 'Ma soeur la';
+        } else if (clicked === sellerie) {
+            projectImg.style.backgroundImage = 'url(images/coming.webp)';
+            projectName.innerHTML = 'EM SELLERIE';
+            projectDescription.innerHTML = 'Les clients la';
+        }
+
+        // Ajout d'un délai pour permettre à l'image de se charger avant d'afficher le texte
+        setTimeout(() => {
+            projectName.classList.add('active');
+            projectDescription.classList.add('active');
+        }, 100);
+    }, 500); // Délai pour permettre la transition d'opacité
 }
-
-
 
 
 

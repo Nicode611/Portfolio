@@ -24,7 +24,7 @@ function changeProject(clicked) {
         if (clicked === voisins) {
             projectImg.style.backgroundImage = 'url(images/voisins.webp)';
             projectName.innerHTML = 'HELLO VOISINS';
-            projectDescription.innerHTML = 'Les voisins la';
+            projectDescription.innerHTML = 'Hello-Voisins est une application web conçue pour faciliter la communication entre voisins.<br> L\'application permet aux utilisateurs de discuter avec leurs voisins en utilisant la localisation des utilisateurs.<br>Elle permet aussi la création de groupes de discussion pour des immeubles,résidences, ou pour tout autre cas d’usages, et inclus également la possibilité de voir tous les utilisateurs à proximité sur une carte, tout en respectant la confidentialité des utilisateurs qui peuvent choisir de ne pas apparaître.';
         } else if (clicked === garage) {
             projectImg.style.backgroundImage = 'url(images/gar.webp)';
             projectName.innerHTML = 'GARAGE V. PARROT';

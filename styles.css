@@ -202,13 +202,13 @@ main {
     z-index: 0;
 }
 
-.project-name {
+.project-name, .project-name-default {
     font-size: 3em;
     margin: 15px;
     backdrop-filter: blur(3px);
 }
 
-.project-description {
+.project-description, .project-description-default {
     backdrop-filter: blur(3px);
     font-size: 1.1em;
 }
@@ -318,7 +318,7 @@ main {
 
 
 
-/* .project-img {
+.project-img {
     transition: background-image 0.5s ease-in-out;
 }
 
@@ -329,4 +329,4 @@ main {
 
 .project-name.active, .project-description.active {
     opacity: 1;
-} */
+} 

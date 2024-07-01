@@ -35,14 +35,17 @@ function changeProject(clicked) {
             projectImg.style.backgroundImage = 'url(images/gar.webp)';
             projectName.innerHTML = 'GARAGE V. PARROT';
             projectDescription.innerHTML = 'le garage la';
+            projectBtn.href = "http://157.230.143.168/"
         } else if (clicked === mb) {
             projectImg.style.backgroundImage = 'url(images/mb.webp)';
             projectName.innerHTML = 'MINUTE BEAUTE';
             projectDescription.innerHTML = 'Ma soeur la';
+            projectBtn.href = "https://minutebeaute.fr/"
         } else if (clicked === sellerie) {
             projectImg.style.backgroundImage = 'url(images/coming.webp)';
             projectName.innerHTML = 'EM SELLERIE';
             projectDescription.innerHTML = 'Les clients la';
+            projectBtn.href = "https://em-sellerie.fr/"
         }
 
         // Ajout d'un délai pour permettre à l'image de se charger avant d'afficher le texte

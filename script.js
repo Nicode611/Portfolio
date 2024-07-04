@@ -1,3 +1,25 @@
+// Menu hamburger
+
+const menuBtn = document.querySelector('.hamburger-btn');
+const menu = document.querySelector('.menu');
+const overlay = document.querySelector('.overlay');
+
+menuBtn.addEventListener('click', function() {
+    menuBtn.classList.toggle('open');
+    menu.classList.toggle('open');
+    overlay.classList.toggle('active');
+});
+
+function closeMenu() {
+    menuBtn.classList.remove('open');
+    menu.classList.remove('open');
+    overlay.classList.remove('active');
+}
+
+overlay.addEventListener('click', closeMenu());
+
+
+
 // Elements de la liste
 let voisins = document.querySelector('#voisins-list') && document.querySelector('#menu-voisins');
 let garage = document.querySelector('#garage-list') && document.querySelector('#menu-garage');
@@ -30,22 +52,26 @@ function changeProject(clicked) {
             projectImg.style.backgroundImage = 'url(images/voisins.webp)';
             projectName.innerHTML = 'HELLO VOISINS';
             projectDescription.innerHTML = 'Hello-Voisins est une application web conçue pour faciliter la communication entre voisins.<br> L\'application permet aux utilisateurs de discuter avec leurs voisins en utilisant la localisation des utilisateurs.<br>Elle permet aussi la création de groupes de discussion pour des immeubles,résidences, ou pour tout autre cas d’usages, et inclus également la possibilité de voir tous les utilisateurs à proximité sur une carte, tout en respectant la confidentialité des utilisateurs qui peuvent choisir de ne pas apparaître.';
-            projectBtn.href = "https://hello-voisins.com"
+            projectBtn.href = "https://hello-voisins.com";
+            closeMenu();
         } else if (clicked === garage) {
             projectImg.style.backgroundImage = 'url(images/gar.webp)';
             projectName.innerHTML = 'GARAGE V. PARROT';
             projectDescription.innerHTML = 'le garage la';
-            projectBtn.href = "http://157.230.143.168/"
+            projectBtn.href = "http://157.230.143.168/";
+            closeMenu();
         } else if (clicked === mb) {
             projectImg.style.backgroundImage = 'url(images/mb.webp)';
             projectName.innerHTML = 'MINUTE BEAUTE';
             projectDescription.innerHTML = 'Ma soeur la';
-            projectBtn.href = "https://minutebeaute.fr/"
+            projectBtn.href = "https://minutebeaute.fr/";
+            closeMenu();
         } else if (clicked === sellerie) {
             projectImg.style.backgroundImage = 'url(images/coming.webp)';
             projectName.innerHTML = 'EM SELLERIE';
             projectDescription.innerHTML = 'Les clients la';
-            projectBtn.href = "https://em-sellerie.fr/"
+            projectBtn.href = "https://em-sellerie.fr/";
+            closeMenu();
         }
 
         // Ajout d'un délai pour permettre à l'image de se charger avant d'afficher le texte
@@ -76,23 +102,3 @@ for (let i = 0; i < 10; i++) {
    document.body.appendChild(initialBubble);
 }
 
-
-// Menu hamburger
-
-document.addEventListener('DOMContentLoaded', function() {
-    const menuBtn = document.querySelector('.hamburger-btn');
-    const menu = document.querySelector('.menu');
-    const overlay = document.querySelector('.overlay');
-
-    menuBtn.addEventListener('click', function() {
-        menuBtn.classList.toggle('open');
-        menu.classList.toggle('open');
-        overlay.classList.toggle('active');
-    });
-
-    overlay.addEventListener('click', function() {
-        menuBtn.classList.remove('open');
-        menu.classList.remove('open');
-        overlay.classList.remove('active');
-    });
-});

@@ -185,6 +185,10 @@ a {
     color: white;
 }
 
+.menu ul li:hover{
+    cursor: pointer;
+}
+
 .menu ul li:last-child {
     border-bottom: none;
 }
@@ -391,6 +395,7 @@ main {
 @media screen and (max-width: 1098px) {
     body {
         overflow: auto;
+        overflow-x: hidden;
     }
 
     header{
@@ -498,6 +503,52 @@ main {
     .project-description {
         text-align: center;
     }
+
+
+
+    /* Triangles */
+
+    .triangle {
+        position: fixed;
+        bottom: -150px;
+        left: 0px;
+    }
+    
+    .triangle1 {
+        height: 200px;
+        width: 200px;
+        background-color: #166282   ; 
+        box-shadow: 0px 0px 10px black;
+        border-radius: 5px;
+        left: -100px; 
+        bottom: -100px;
+        transform: rotate(45deg);
+        z-index: 3;
+    }
+    
+     .triangle2 {
+        height: 200px;
+        width: 200px;
+        background-color: #145672   ; 
+        box-shadow: 0px 0px 10px black;
+        border-radius: 5px;
+        left: 0px; 
+        bottom: -125px;
+        transform: rotate(45deg);
+        z-index: 2;
+    }
+    
+    .triangle3 {
+        height: 200px;
+        width: 200px;
+        background-color: #124E68   ; 
+        box-shadow: 0px 0px 10px black;
+        border-radius: 5px;
+        left: 100px;
+        bottom: -150px;
+        transform: rotate(45deg);
+        z-index: 1;
+    } 
 }
 
 @media screen and (max-height: 860px) {

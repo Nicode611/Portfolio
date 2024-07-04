@@ -47,7 +47,6 @@ a {
     background-image: url(images/profile-picture.webp);
     background-size: cover;
     background-position: center;
-    border: solid 2px #000000;
 }
 
 .profile-infos {
@@ -162,7 +161,7 @@ a {
     right: -250px;
     width: 250px;
     height: 320px;
-    background-color: #124E68;
+    background-color: #0b3b52;
     transition: right 0.4s;
     clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 100% 100%, 100% 100%, 100% 100%, 0% 60%, 0% 10%);
     z-index: 999;
@@ -523,6 +522,7 @@ main {
         position: initial;
         padding: 10px;
         margin-bottom: 300px;
+        width: 90%;
     }
 
     .project-img {

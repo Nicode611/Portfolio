@@ -1,8 +1,8 @@
 // Elements de la liste
-let voisins = document.querySelector('#voisins-list');
-let garage = document.querySelector('#garage-list');
-let mb = document.querySelector('#mb-list');
-let sellerie = document.querySelector('#sellerie-list');
+let voisins = document.querySelector('#voisins-list') && document.querySelector('#menu-voisins');
+let garage = document.querySelector('#garage-list') && document.querySelector('#menu-garage');
+let mb = document.querySelector('#mb-list') && document.querySelector('#menu-beaute');
+let sellerie = document.querySelector('#sellerie-list') && document.querySelector('#menu-sellerie');
 
 document.addEventListener("DOMContentLoaded", function() {
     voisins.click();
@@ -75,3 +75,24 @@ for (let i = 0; i < 10; i++) {
    initialBubble.style.animationDelay = '0s'; 
    document.body.appendChild(initialBubble);
 }
+
+
+// Menu hamburger
+
+document.addEventListener('DOMContentLoaded', function() {
+    const menuBtn = document.querySelector('.hamburger-btn');
+    const menu = document.querySelector('.menu');
+    const overlay = document.querySelector('.overlay');
+
+    menuBtn.addEventListener('click', function() {
+        menuBtn.classList.toggle('open');
+        menu.classList.toggle('open');
+        overlay.classList.toggle('active');
+    });
+
+    overlay.addEventListener('click', function() {
+        menuBtn.classList.remove('open');
+        menu.classList.remove('open');
+        overlay.classList.remove('active');
+    });
+});

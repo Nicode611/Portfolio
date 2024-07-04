@@ -406,6 +406,10 @@ main {
         padding-left: 5px;
     }
 
+    .profile-infos {
+        padding-left: 10px;
+    }
+
     .profile-picture {
         height: 75px;
         width: 75px;
@@ -465,11 +469,12 @@ main {
         text-align: center;
         width: auto;
         padding: 20px;
+        padding-top: 0px;
     }
 
     .profile-description {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
 
@@ -479,8 +484,13 @@ main {
     }
 
     .mail-phone-section {
-        
+        align-self: baseline;
         justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .mail-section, .phone-section {
+        padding: 0px;
     }
 
     .projects {
@@ -491,6 +501,15 @@ main {
         position: initial;
         padding: 10px;
         margin-bottom: 300px;
+    }
+
+    .project-img {
+        max-width: 100%;
+        max-height: auto;
+        background-image: url(images/helov.webp);
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
     }
 
     .project-name {

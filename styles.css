@@ -507,7 +507,7 @@ main {
     .mail-phone-section {
         align-self: baseline;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .mail-section, .phone-section {

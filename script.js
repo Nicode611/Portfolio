@@ -26,10 +26,14 @@ overlay.addEventListener('click', function closeMenu() {
 
 
 // Elements de la liste
-let voisins = document.querySelector('#voisins-list') && document.querySelector('#menu-voisins');
-let garage = document.querySelector('#garage-list') && document.querySelector('#menu-garage');
-let mb = document.querySelector('#mb-list') && document.querySelector('#menu-beaute');
-let sellerie = document.querySelector('#sellerie-list') && document.querySelector('#menu-sellerie');
+let voisins = document.querySelector('#voisins-list');
+let garage = document.querySelector('#garage-list');
+let mb = document.querySelector('#mb-list');
+let sellerie = document.querySelector('#sellerie-list');
+let mobileVoisins = document.querySelector('#menu-voisins');
+let mobileGarage = document.querySelector('#menu-garage');
+let mobileMb = document.querySelector('#menu-beaute');
+let mobileSellerie = document.querySelector('#menu-sellerie');
 
 document.addEventListener("DOMContentLoaded", function() {
     voisins.click();
@@ -39,6 +43,10 @@ voisins.addEventListener('click', () => changeProject(voisins));
 garage.addEventListener('click', () => changeProject(garage));
 mb.addEventListener('click', () => changeProject(mb));
 sellerie.addEventListener('click', () => changeProject(sellerie));
+mobileVoisins.addEventListener('click', () => changeProject(voisins))
+mobileGarage.addEventListener('click', () => changeProject(garage))
+mobileMb.addEventListener('click', () => changeProject(mb))
+mobileSellerie.addEventListener('click', () => changeProject(sellerie))
 
 
 function changeProject(clicked) {

@@ -392,6 +392,28 @@ main {
 
 
 
+
+
+@media screen and (max-height: 860px) {
+    .projects {
+        margin-top: 20px;
+    }
+
+    /* .project-img {
+        max-width: auto;
+        max-height: 30vw;
+        background-image: url(images/helov.webp);
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    } */
+
+    .projects-list li {
+        padding: 5px 5px;
+        font-size: 1.1em;
+    }
+}
+
 @media screen and (max-width: 1098px) {
     body {
         overflow: auto;
@@ -565,26 +587,6 @@ main {
         transform: rotate(45deg);
         z-index: 1;
     } 
-}
-
-@media screen and (max-height: 860px) {
-    .projects {
-        margin-top: 20px;
-    }
-
-    .project-img {
-        max-width: auto;
-        max-height: 30vw;
-        background-image: url(images/helov.webp);
-        background-size: cover;
-        background-position: center;
-        z-index: 1;
-    }
-
-    .projects-list li {
-        padding: 5px 5px;
-        font-size: 1.1em;
-    }
 }
 
 

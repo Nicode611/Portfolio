@@ -14,9 +14,14 @@ function closeMenu() {
     menuBtn.classList.remove('open');
     menu.classList.remove('open');
     overlay.classList.remove('active');
+    console.log('hello');
 }
 
-overlay.addEventListener('click', closeMenu());
+overlay.addEventListener('click', function closeMenu() {
+    menuBtn.classList.remove('open');
+    menu.classList.remove('open');
+    overlay.classList.remove('active');
+});
 
 
 

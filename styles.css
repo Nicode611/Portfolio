@@ -161,7 +161,7 @@ a {
     top: 0px;
     right: -250px;
     width: 250px;
-    height: 40%;
+    height: 320px;
     background-color: #124E68;
     transition: right 0.4s;
     clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 100% 100%, 100% 100%, 100% 100%, 0% 60%, 0% 10%);

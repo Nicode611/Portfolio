@@ -255,7 +255,7 @@ main {
 }
 
 .projects {
-    margin-top: 80px;
+    margin-top: 20px;
     margin-left: 20px;
     width: 300px;
     backdrop-filter: blur(3px);
@@ -305,9 +305,9 @@ main {
     align-items: center;
     width: 55%;
     height: 100vh;
-    padding-bottom: 150px;
     z-index: 0;
 }
+
 
 .project-img {
     max-width: 446px;

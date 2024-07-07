@@ -14,6 +14,10 @@ body {
     z-index: 0;
 }
 
+header{
+    padding-top: 10px;
+}
+
 header nav ul{
     display: flex;
     flex-direction: row;
@@ -394,13 +398,17 @@ main {
 
 
 @media screen and (max-height: 860px) {
+    body {
+        overflow-y: auto;
+    }
+
     .projects {
         margin-top: 20px;
     }
 
     .project-img {
         max-width: auto;
-        max-height: 30vw;
+        max-height: 50vh;
         background-image: url(images/helov.webp);
         background-size: cover;
         background-position: center;

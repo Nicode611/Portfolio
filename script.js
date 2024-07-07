@@ -80,7 +80,7 @@ function changeProject(clicked) {
             projectBtn.href = "https://minutebeaute.fr/";
             closeMenu();
         } else if (clicked === sellerie) {
-            projectImg.style.backgroundImage = 'url(images/coming.webp)';
+            projectImg.style.backgroundImage = 'url(images/test.png)';
             projectName.innerHTML = 'EM SELLERIE';
             projectDescription.innerHTML = 'Les clients la';
             projectBtn.href = "https://em-sellerie.fr/";

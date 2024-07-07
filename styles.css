@@ -297,13 +297,15 @@ main {
 }
 
 .project {
-    position: relative;
-    top: -70px;
+    position: absolute;
+    top: 0px;
+    right: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 65%;
-    padding-right: 150px;
+    width: 55%;
+    height: 100vh;
+    padding-bottom: 150px;
     z-index: 0;
 }
 
@@ -325,7 +327,7 @@ main {
 
 .project-description, .project-description-default {
     backdrop-filter: blur(3px);
-    font-size: 1.1em;
+    font-size: 2.3vh;
 }
 
 .see-project-btn {

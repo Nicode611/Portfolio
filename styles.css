@@ -250,7 +250,6 @@ main {
     margin-right: 10px;
 }
 
-
 .projects {
     margin-top: 80px;
     margin-left: 20px;
@@ -528,7 +527,7 @@ main {
 
     .project-img {
         max-width: 100%;
-        max-height: auto;
+        max-height: 80%;
         background-image: url(images/helov.webp);
         background-size: cover;
         background-position: center;

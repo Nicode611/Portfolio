@@ -420,9 +420,15 @@ main {
         z-index: 1;
     } 
 
+    .projects-list li img {
+        height: 30px;
+        width: 30px;
+        padding-right: 15px;
+    }
+
     .projects-list li {
         padding: 5px 5px;
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
 

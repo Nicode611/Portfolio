@@ -240,6 +240,10 @@ main {
     backdrop-filter: blur(3px);
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .mail-section, .phone-section {
     display: flex;
     align-items: center;

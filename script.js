@@ -70,19 +70,19 @@ function changeProject(clicked) {
         } else if (clicked === garage) {
             projectImg.style.backgroundImage = 'url(images/gar.webp)';
             projectName.innerHTML = 'GARAGE V. PARROT';
-            projectDescription.innerHTML = 'le garage la';
+            projectDescription.innerHTML = 'Ce projet a été réalisé dans le cadre de ma formation et constitue mon projet d’examen. L’objectif de cet examen était de créer un site web pour M. V. Parrot, garagiste à Toulouse. Le site permet à M. Parrot de mettre en exposition ses véhicules d’occasion, d’ajouter les services proposés par son garage, ainsi que de gérer diverses autres fonctionnalités via un panneau de contrôle. <br><br>Les employés du garage disposent également d’un accès à un panneau de contrôle, mais avec des fonctionnalités restreintes adaptées à leurs besoins. <br><br>Voici les identifiants de connexion pour les différents types de comptes :';
             projectBtn.href = "http://157.230.143.168/";
             closeMenu();
         } else if (clicked === mb) {
             projectImg.style.backgroundImage = 'url(images/mb.webp)';
             projectName.innerHTML = 'MINUTE BEAUTE';
-            projectDescription.innerHTML = 'Ma soeur la';
+            projectDescription.innerHTML = 'Ce projet a été réalisé dans le cadre d’une mission en freelance. Wendy, une coiffeuse récemment établie à son compte, avait besoin d’un site vitrine pour promouvoir son activité.<br><br>Ce projet m’a permis de travailler intensivement sur le design afin de mettre en valeur son activité. J’ai également dû gérer plusieurs aspects techniques tels que l’hébergement, le CMS, les frameworks, le référencement, la sécurité, etc.<br><br>Étant donné qu’il s’agissait d’une mission professionnelle, j’ai dû être extrêmement vigilant sur tous ces points pour garantir un résultat optimal et répondre aux attentes de ma cliente.';
             projectBtn.href = "https://minutebeaute.fr/";
             closeMenu();
         } else if (clicked === sellerie) {
             projectImg.style.backgroundImage = 'url(images/emsel.webp)';
             projectName.innerHTML = 'EM SELLERIE';
-            projectDescription.innerHTML = 'Les clients la';
+            projectDescription.innerHTML = 'Ce projet a été réalisé dans le cadre d’une mission en freelance. Marc et Emma, de la société EM Sellerie, souhaitaient un site web pour promouvoir leur activité et présenter leurs réalisations. Étant donné la nature très artisanale et presque artistique de leur domaine, la sellerie, ils voulaient un site qui reflète fidèlement leur univers. Nous avons donc travaillé ensemble sur le design pour qu’il corresponde parfaitement à leur vision.<br><br>La personnalisation du site a été un défi technique majeur. J’ai dû m’adapter et modifier mes méthodes de travail pour répondre aux besoins spécifiques de mes clients.<br>La sécurité a également représenté un défi important, car le site faisait face à de nombreuses attaques. Cela m’a permis de renforcer mes compétences en matière de sécurité web.';
             projectBtn.href = "https://em-sellerie.fr/";
             closeMenu();
         }

@@ -244,7 +244,7 @@ main {
     font-weight: bold;
 }
 
-.mail-section, .phone-section {
+.icon-section {
     display: flex;
     align-items: center;
     padding-left: 20px;

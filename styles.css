@@ -308,13 +308,14 @@ main {
     align-items: center;
     width: 55%;
     height: 100vh;
+    margin-top: 3%;
     z-index: 0;
 }
 
 
 .project-img {
     max-width: 446px;
-    height: 45%;
+    height: 35%;
     background-image: url(images/voisins.webp);
     background-color: #124E68;
     background-size: cover;
